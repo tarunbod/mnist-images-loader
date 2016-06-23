@@ -2,7 +2,7 @@ mnist-images-loader
 ===================
 
 ### What
-A simple python script that will load the training images from the [MNIST](http://yann.lecun.com/exdb/mnist/) data set. Uses Python 3.
+Two python scripts that will load the training and testing images from the [MNIST](http://yann.lecun.com/exdb/mnist/) data set. Uses Python 3.
 
 ### Usage
 1. Clone this repository
@@ -15,4 +15,11 @@ A simple python script that will load the training images from the [MNIST](http:
 
 3. Run the python script
 
-    `$ python main.py`
+    `$ ./generate-training-images.py`
+
+    `$ ./generate-testing-images.py`
+
+    This will create two folders: `training-images/` and `testing-images`. These folders will contain the actual images. The actual values represented by the images will be saved in a json file called `training-labels.json` and `testing-labels.json`. 
+
+### License
+MIT License
