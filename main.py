@@ -28,7 +28,7 @@ SIZE = 28
 
 with open('train-images.idx3-ubyte', 'rb') as imgs_file:
     imgs_file.read(16)
-    for i in range(10):
+    for i in range(60000):
         print('Image #%s' % (i + 1), end='\r')
         new_image = np.zeros((SIZE, SIZE))
         for row in range(SIZE):
